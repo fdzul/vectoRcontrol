@@ -77,7 +77,7 @@ tb_cl <- function(path, jur = NULL, state){
 
 
 
-    if(state == TRUE){
+    if(state == FALSE){
         xa <- x |>
             dplyr::filter(semana_epidemiologica %in% c(1:(lubridate::week(Sys.time())-1))) |>
             dplyr::filter(jurisdiccion == jur) |>
