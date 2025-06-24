@@ -17,7 +17,7 @@
 #' @seealso \link[formattable]{formattable}
 #'
 #' @details xxx
-tb_cl <- function(path, jur = NULL, state){
+cl_tb <- function(path, jur = NULL, state){
 
     l_files <- purrr::map(list.dirs(path = path,
                                     full.names = TRUE),
