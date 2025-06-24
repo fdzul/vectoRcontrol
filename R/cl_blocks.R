@@ -123,10 +123,10 @@ cl_blocks <- function(path, cve_edo){
         dplyr::mutate(coverage = dplyr::case_when(cobertura_en_manzana < 51 ~ "Deficiente",
                                                   cobertura_en_manzana >= 51 & cobertura_en_manzana < 70 ~ "Regular",
                                                   cobertura_en_manzana >= 70 & cobertura_en_manzana < 85 ~ "Bueno",
-                                                  cobertura_en_manzana >= 85 ~ "Óptimo",
+                                                  cobertura_en_manzana >= 85 ~ "Optimo",
                                                   T ~ "NA")) |>
         dplyr::mutate(coverage =  factor(coverage,
-                                         levels = c("Bueno","Deficiente","Óptimo","Regular")[c(3, 1, 4, 2)],
-                                         labels = c("Bueno","Deficiente","Óptimo","Regular")[c(3, 1, 4, 2)]))
+                                         levels = c("Bueno","Deficiente","Optimo","Regular")[c(3, 1, 4, 2)],
+                                         labels = c("Bueno","Deficiente","Optimo","Regular")[c(3, 1, 4, 2)]))
 
 }

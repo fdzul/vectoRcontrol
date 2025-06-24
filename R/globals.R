@@ -10,4 +10,12 @@ utils::globalVariables(c("entidad",
                          "semana_epidemiologica",
                          "casas_revisadas",
                          "casas_trabajadas",
-                         "Casas Trabajadas hasta la Semana"))
+                         "Casas Trabajadas hasta la Semana",
+                         "clave",
+                         "manzana",
+                         "seccion",
+                         "geometry",
+                         "id",
+                         "cve_geo",
+                         "cve_ent",
+                         "coverage"))

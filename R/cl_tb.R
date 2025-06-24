@@ -88,8 +88,8 @@ cl_tb <- function(path, jur = NULL, state){
             dplyr::filter(jurisdiccion == jur) |>
             dplyr::filter(semana_epidemiologica %in% c((lubridate::week(Sys.time())-9):(lubridate::week(Sys.time())-1))) |>
             dplyr::group_by(municipio) |>
-            dplyr::summarise("Casas Visitadas en los dos últimos meses" = sum(casas_revisadas, na.rm = TRUE),
-                             "Casas Trabajadas en los dos últimos meses" = sum(casas_trabajadas,na.rm = TRUE))
+            dplyr::summarise("Casas Visitadas en los dos ultimos meses" = sum(casas_revisadas, na.rm = TRUE),
+                             "Casas Trabajadas en los dos ultimos meses" = sum(casas_trabajadas,na.rm = TRUE))
         xc <- x |>
             dplyr::filter(jurisdiccion == jur) |>
             dplyr::filter(semana_epidemiologica == lubridate::week(Sys.time())-1) |>
@@ -104,8 +104,8 @@ cl_tb <- function(path, jur = NULL, state){
                                  by = "municipio") |>
             tidyr::replace_na(list(`Casas Visitadas hasta la Semana` = 0,
                                    `Casas Trabajadas hasta la Semana` = 0,
-                                   `Casas Visitadas en los dos últimos meses` = 0,
-                                   `Casas Trabajadas en los dos últimos meses` = 0,
+                                   `Casas Visitadas en los dos ultimos meses` = 0,
+                                   `Casas Trabajadas en los dos ultimos meses` = 0,
                                    `Casas Visitadas en la Semana` = 0,
                                    `Casas Trabajadas en la Semana` = 0)) |>
             dplyr::arrange(dplyr::desc(`Casas Trabajadas hasta la Semana`))
@@ -116,8 +116,8 @@ cl_tb <- function(path, jur = NULL, state){
                                                                                                                font.weight = "bold")),
                                      "Casas Visitadas hasta la Semana" = formattable::color_tile("#DeF7E9", "#71CA97"),
                                      "Casas Trabajadas hasta la Semana" = formattable::color_tile("white", "orange"),
-                                     "Casas Visitadas en los dos últimos meses" = formattable::color_tile("#DeF7E9", "#71CA97"),
-                                     "Casas Trabajadas en los dos últimos meses" = formattable::color_tile("white", "orange"),
+                                     "Casas Visitadas en los dos ultimos meses" = formattable::color_tile("#DeF7E9", "#71CA97"),
+                                     "Casas Trabajadas en los dos ultimos meses" = formattable::color_tile("white", "orange"),
                                      "Casas Visitadas en la Semana" = formattable::color_tile("#DeF7E9", "#71CA97"),
                                      "Casas Trabajadas en la Semana" = formattable::color_tile("white", "orange")))
     } else {
@@ -129,8 +129,8 @@ cl_tb <- function(path, jur = NULL, state){
         xb <- x |>
             dplyr::filter(semana_epidemiologica %in% c((lubridate::week(Sys.time())-9):(lubridate::week(Sys.time())-1))) |>
             dplyr::group_by(jurisdiccion) |>
-            dplyr::summarise("Casas Visitadas en los dos últimos meses" = sum(casas_revisadas, na.rm = TRUE),
-                             "Casas Trabajadas en los dos últimos meses" = sum(casas_trabajadas,na.rm = TRUE))
+            dplyr::summarise("Casas Visitadas en los dos ultimos meses" = sum(casas_revisadas, na.rm = TRUE),
+                             "Casas Trabajadas en los dos ultimos meses" = sum(casas_trabajadas,na.rm = TRUE))
         xc <- x |>
             dplyr::filter(semana_epidemiologica == lubridate::week(Sys.time())-1) |>
             dplyr::group_by(jurisdiccion) |>
@@ -143,8 +143,8 @@ cl_tb <- function(path, jur = NULL, state){
                                  by = "jurisdiccion") |>
             tidyr::replace_na(list(`Casas Visitadas hasta la Semana` = 0,
                                    `Casas Trabajadas hasta la Semana` = 0,
-                                   `Casas Visitadas en los dos últimos meses` = 0,
-                                   `Casas Trabajadas en los dos últimos meses` = 0,
+                                   `Casas Visitadas en los dos ultimos meses` = 0,
+                                   `Casas Trabajadas en los dos ultimos meses` = 0,
                                    `Casas Visitadas en la Semana` = 0,
                                    `Casas Trabajadas en la Semana` = 0)) |>
             dplyr::arrange(dplyr::desc(`Casas Trabajadas hasta la Semana`))
@@ -155,8 +155,8 @@ cl_tb <- function(path, jur = NULL, state){
                                                                                                                   font.weight = "bold")),
                                      "Casas Visitadas hasta la Semana" = formattable::color_tile("#DeF7E9", "#71CA97"),
                                      "Casas Trabajadas hasta la Semana" = formattable::color_tile("white", "orange"),
-                                     "Casas Visitadas en los dos últimos meses" = formattable::color_tile("#DeF7E9", "#71CA97"),
-                                     "Casas Trabajadas en los dos últimos meses" = formattable::color_tile("white", "orange"),
+                                     "Casas Visitadas en los dos ultimos meses" = formattable::color_tile("#DeF7E9", "#71CA97"),
+                                     "Casas Trabajadas en los dos ultimos meses" = formattable::color_tile("white", "orange"),
                                      "Casas Visitadas en la Semana" = formattable::color_tile("#DeF7E9", "#71CA97"),
                                      "Casas Trabajadas en la Semana" = formattable::color_tile("white", "orange")))
 
