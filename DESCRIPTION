@@ -1,6 +1,6 @@
 Package: vectoRcontrol
 Type: Package
-Title: Vector Control is an R package designed to perform exploratory analysis of vector control dataset carried out by the Mexican Ministry of Health.
+Title: Vector Control is an R package designed to perform exploratory analysis of vector control dataset carried out by the Mexican Ministry of Health
 Version: 0.1.0
 Authors@R: c(person(given = "Felipe Antonio",
                         family = "Dzul Manzanilla",
@@ -12,9 +12,18 @@ Authors@R: c(person(given = "Felipe Antonio",
                         role = c("ctb"),
                         email = "fabiancorrea@msn.com",
                         comment = c(ORCID = "https://orcid.org/0000-0002-6193-1242")))
-Description: Vector Control is an R package designed to perform exploratory analysis 
-    of vector control databases carried out by the Mexican Ministry of Health.
+Description: vectoRcontrol is an R package designed to perform exploratory analysis 
+    of vector control databases carried out by the Mexican Ministry of Health
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
+Imports: 
+    data.table,
+    dplyr,
+    formattable,
+    janitor,
+    lubridate,
+    purrr,
+    stringr,
+    tidyr

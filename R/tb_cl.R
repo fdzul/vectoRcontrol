@@ -7,7 +7,7 @@
 #' @author Felipe Antonio Dzul Manzanilla \email{felipe.dzul.m@gmail.com}
 #'
 #' @return a table.
-#'
+#' @importFrom utils read.table
 #' @export
 #'
 #' @examples 1+1
@@ -17,7 +17,7 @@
 #' @seealso \link[formattable]{formattable}
 #'
 #' @details xxx
-tb_cl <- function(path, inf, jur = NULL, mun){
+tb_cl <- function(path, jur = NULL, state){
 
     l_files <- purrr::map(list.dirs(path = path,
                                     full.names = TRUE),
@@ -108,7 +108,7 @@ tb_cl <- function(path, inf, jur = NULL, mun){
                                    `Casas Trabajadas en los dos últimos meses` = 0,
                                    `Casas Visitadas en la Semana` = 0,
                                    `Casas Trabajadas en la Semana` = 0)) |>
-            dplyr::arrange(desc(`Casas Trabajadas hasta la Semana`))
+            dplyr::arrange(dplyr::desc(`Casas Trabajadas hasta la Semana`))
         formattable::formattable(xabc,
                                  align = c("c","c","c", "c", "c", "c", "c"),
                                  list(
@@ -147,7 +147,7 @@ tb_cl <- function(path, inf, jur = NULL, mun){
                                    `Casas Trabajadas en los dos últimos meses` = 0,
                                    `Casas Visitadas en la Semana` = 0,
                                    `Casas Trabajadas en la Semana` = 0)) |>
-            dplyr::arrange(desc(`Casas Trabajadas hasta la Semana`))
+            dplyr::arrange(dplyr::desc(`Casas Trabajadas hasta la Semana`))
         formattable::formattable(xabc,
                                  align = c("c","c","c", "c", "c", "c", "c"),
                                  list(

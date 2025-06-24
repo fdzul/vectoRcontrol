@@ -4,7 +4,7 @@
 \alias{tb_cl}
 \title{Generate a larval control table}
 \usage{
-tb_cl(path, inf, jur = NULL, mun)
+tb_cl(path, jur = NULL, state)
 }
 \arguments{
 \item{path}{is the path of files.}

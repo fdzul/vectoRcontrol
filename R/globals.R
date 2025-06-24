@@ -1,0 +1,13 @@
+utils::globalVariables(c("entidad",
+                         "read.table",
+                         "Entidad",
+                         "Localidad",
+                         "Municipio",
+                         "municipio",
+                         "localidad",
+                         "jurisdiccion",
+                         "Jurisdiccion",
+                         "semana_epidemiologica",
+                         "casas_revisadas",
+                         "casas_trabajadas",
+                         "Casas Trabajadas hasta la Semana"))
