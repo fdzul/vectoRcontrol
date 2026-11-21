@@ -6,12 +6,12 @@ Authors@R: c(person(given = "Felipe Antonio",
                         family = "Dzul Manzanilla",
                         role = c("aut", "cre"),
                         email = "felipe.dzul.m@gmail.com",
-                        comment = c(ORCID = "https://orcid.org/0000-0002-2085-9141")),
+                        comment = c(ORCID = "0000-0002-2085-9141")),
                  person(given = "Fabian",
                         family = "Correa-Morales",
                         role = c("ctb"),
                         email = "fabiancorrea@msn.com",
-                        comment = c(ORCID = "https://orcid.org/0000-0002-6193-1242")))
+                        comment = c(ORCID = "0000-0002-6193-1242")))
 Description: vectoRcontrol is an R package designed to perform exploratory analysis of vector control databases carried out by the Mexican Ministry of Health.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -28,3 +28,5 @@ Imports:
     sf,
     stringr,
     tidyr
+Remotes:
+    fdzul/rgeomex
